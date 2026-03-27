@@ -1,7 +1,7 @@
 {
   "name": "my-node-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first node app",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,11 +11,15 @@
     "node",
     "express"
   ],
-  "author": "",
+  "author": "Evie H",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "express": "^5.2.1",
+    "express-handlebars": "^8.0.6",
+    "lowdb": "^7.0.1",
+    "uuid": "^13.0.0",
     "winston": "^3.19.0"
   },
   "devDependencies": {
