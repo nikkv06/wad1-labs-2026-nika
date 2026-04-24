@@ -33,6 +33,17 @@ const dashboard = {
     response.redirect('/dashboard');
   },
 
+  deletePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect("/dashboard");
+},
+
+  removePlaylist(id) {
+    const playlist = this.getPlaylist(id);
+    this.store.removeCollection(this.collection, playlist);
+},
 
 };
 
