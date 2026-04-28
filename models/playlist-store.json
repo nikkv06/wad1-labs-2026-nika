@@ -1,33 +1,6 @@
 {
   "playlistCollection": [
     {
-      "id": "01",
-      "title": "Beethoven Sonatas",
-      "songs": [
-        {
-          "id": "04",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "65b67336-2247-4087-90df-241a6eaa926f",
-          "title": "beethoven",
-          "artist": "beethoven"
-        }
-      ],
-      "rating": 3
-    },
-    {
       "id": "02",
       "title": "Beethoven Concertos",
       "songs": [
@@ -39,7 +12,7 @@
         {
           "id": "08",
           "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
+          "artist": "ftkkt"
         },
         {
           "id": "09",
@@ -56,21 +29,21 @@
       "rating": 1
     },
     {
-      "id": "a6045cd5-5d04-4007-b579-2f426bad8f1d",
-      "title": "evie songs",
-      "songs": [],
-      "rating": 4
-    },
-    {
       "id": "128a72c2-b570-4fc3-967f-d28506441f88",
-      "title": "today",
+      "title": "pop songs",
       "date": "2026-03-20T14:20:47.607Z",
-      "songs": [],
+      "songs": [
+        {
+          "id": "4180c114-a0b9-47b5-8462-49dbcff78371",
+          "title": "jdjhjh",
+          "artist": "efjhje"
+        }
+      ],
       "rating": 0
     },
     {
       "id": "a3bda344-f5a0-4147-a635-5b208fdf318d",
-      "title": "evie more songs",
+      "title": "nikas songs",
       "rating": 5,
       "date": "2026-03-20T14:33:37.446Z",
       "songs": []

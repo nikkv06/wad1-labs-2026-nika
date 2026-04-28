@@ -29,7 +29,19 @@ const playlistStore = {
     this.store.removeItem(this.collection, id, this.array, songId);
 },
 
+  removePlaylist(id) {
+    const playlist = this.getPlaylist(id);
+    this.store.removeCollection(this.collection, playlist);
+},
+
+editSong(id, songId, updatedSong) {
+    this.store.editItem(this.collection, id, songId, this.array, updatedSong);
+},
+
+
 };
+
+
 
 
 export default playlistStore;

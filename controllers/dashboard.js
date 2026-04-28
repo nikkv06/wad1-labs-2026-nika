@@ -40,11 +40,6 @@ const dashboard = {
     response.redirect("/dashboard");
 },
 
-  removePlaylist(id) {
-    const playlist = this.getPlaylist(id);
-    this.store.removeCollection(this.collection, playlist);
-},
-
 };
 
 export default dashboard;
