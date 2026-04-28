@@ -25,7 +25,13 @@
     {
       "id": "03",
       "title": "Beethoven Unfinished Symphonies",
-      "songs": [],
+      "songs": [
+        {
+          "id": "4a277cfa-5beb-433e-9cf0-f7035f739429",
+          "title": "fnjfj",
+          "artist": "fmfm"
+        }
+      ],
       "rating": 1
     },
     {

@@ -1,50 +1,20 @@
-"use strict";
+'use strict';
+
 import logger from "../utils/logger.js";
-import playlistStore from "../models/playlist-store.js";
+import appStore from "../models/app-store.js";
 
-const stats = {
+const start = {
   createView(request, response) {
-    logger.info("Stats page loading!");
-    // app statistics calculations
-    const playlists = playlistStore.getAllPlaylists();
-
-    let numPlaylists = playlists.length;
+    logger.info("Start page loading!");
     
-    let numSongs = playlists.reduce((total, playlist) => total + playlist.songs.length, 0);
-	
-	  let average = numPlaylists > 0 ? (numSongs / numPlaylists).toFixed(2) : 0;
-
-    let mapped = playlists.map(playlist => playlist.rating);
-
-    let maxRating = Math.max(...mapped);
-
-    let maxRated = playlists.filter(playlist => playlist.rating === maxRating);
-
-    let favTitles = maxRated.map(item => item.title);
-
-let maxRating = Math.max(...playlists.map(playlist => playlist.rating));
-let maxRated = playlists.filter(playlist => playlist.rating === maxRating);
-let favTitles = maxRated.map(item => item.title);
-
-
-
-const statistics = {
-    displayNumPlaylists: numPlaylists,
-    displayNumSongs: numSongs,
-    displayAverage: average,
-    displayAvgRating: avgRating.toFixed(2),
-	  highest: maxRating,
-    displayFav: favTitles
-};
-
-
     const viewData = {
-      title: "Playlist App Statistics",
-      stats: statistics
+      title: "Welcome to the Playlist app!",
+      info: appStore.getAppInfo()
     };
-  
-    response.render("stats", viewData);
+    
+    //logger.debug(viewData);
+    response.render('start', viewData);   
   },
 };
 
-export default stats;
+export default start;
